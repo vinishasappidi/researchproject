@@ -1,0 +1,22 @@
+<% layout('layout') -%>
+
+<div class="jumbotron article">
+    <h2>Paediatrics</h2><br>
+    <form>
+    <% if( Array.isArray(doc)) { %>
+        <ul class="grid-container" style="grid-auto-flow: row dense;">
+        
+        <%doc.forEach( function( prd ){ %>
+        
+        <b>
+        <li>
+            <a class="item1"> Name: Dr.<%= prd.name %> , <%= prd.category %><br>
+                Working Hours: <%= prd.workhours %> <br><br>
+            </a>
+        </li>
+        </b>
+        <% }); %>
+    <% }; %>
+    <p><a class="btn btn-primary" href="/personal-appoint" role="button">Book a doctor appointment.. &raquo;</a></p>
+    </form>
+</div>

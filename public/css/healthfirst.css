@@ -1,0 +1,131 @@
+#navbar-gap {
+  margin-top: -4%;
+}
+
+/* body */
+body {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url("3.jpeg");
+	color: rgba(13, 13, 14, 0.877);
+}
+
+/* Footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(5, 5, 5);
+	color: rgba(255, 255, 255, 0.438);
+	text-align: left;
+	font-size: 12px;
+	padding-left: 50px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.contact-form
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 340px;
+	height: 450px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	background: rgba(32, 240, 171, 0.226);
+}
+
+.contact-form h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-form p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.contact-form input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contact-form a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.home-block{
+	position: relative;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.719);
+	margin: 18px;
+	height: 195px;
+	width: 190px;
+}
+
+.article{
+	text-align: justify;
+	padding-right: 120px;
+	padding-top: 5px;
+	padding-left: 120px;
+	padding-bottom: 5px;
+}
+
+.jumbo{
+	text-align: center;
+	color: rgb(248, 108, 15);
+	background-image: url("home_jumbo_background.jpg");
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', "Arial, sans-serif";
+	font-size: 25px;
+	letter-spacing: 1.8px;
+	word-spacing: 1.2px;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+.jumbo-about{
+	text-align: left;
+	padding-left: 50px;
+	padding-top: 10px;
+	font-weight: 400;
+}
+
+/* This is for Specialist doctor appointment drop down menu for doctors */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: black;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #111111}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	color: whitesmoke;
+}
+
+.dropbtn{
+	background-color: darkgoldenrod;
+}
+

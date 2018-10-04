@@ -1,0 +1,56 @@
+<% layout('layout') -%>
+
+<div class="jumbotron article">
+    <h2>Book your personal appointment with a specialist here...</h2><br>
+    <form method="post">                
+        <div class="form-group">
+            <label="name">Name: </label>
+            <input type="text" class="form-control" name="name">
+        </div>
+
+        <div class="form-group">
+            <label="name">Address: </label>
+            <input type="text" class="form-control" name="address">
+        </div>
+
+        <div class="form-group">
+            <label="name">Mobile: </label>
+            <input type="text" class="form-control" name="mobile">
+        </div>
+
+        <div class="form-group">
+            <label="name">Your Problem: </label>
+            <input type="text" class="form-control" name="problem">
+        </div>
+        
+        <select name="category" value="category" class="dropdown btn dropbtn">
+                Category: <div class="dropdown-content">
+                <option>Category</option>
+                <option value="category">Cardiology</option>
+                <option value="category">Dentistry</option>
+                <option value="category">Paediatrics</option>
+                <option value="category">physiology</option>
+                <option value="category">Radiology</option>
+                <option value="category">Other</option>
+            </div>
+        </select><br><br>
+
+        <select name="doctor" value="doctor" class="dropdown btn dropbtn">
+            <div class="dropdown-content">
+                <% if( Array.isArray(doc)) { %>
+                    <option>Select Doctor: </option>
+                    <%doc.forEach( function( prd ){ %>
+                        <option value="doctor"><%= prd.name %></option>
+                    <% }); %>
+                <% }; %>
+            </div>
+        </select><br><br>
+
+        <div class="form-group">
+            <label="name">TimeSlot: </label>
+            <input type="text" class="form-control" name="timeslot">
+        </div>
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

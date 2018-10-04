@@ -1,3 +1,2 @@
-# Minor Thesis Project
-# Vinisha Sappidi
-
+# Ecommerce_NodeJS
+An eCommerce application like amazon

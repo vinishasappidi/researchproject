@@ -1,0 +1,58 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="/">HEALTH FIRST &hearts;</a>
+          </div>
+      
+          <ul class="nav navbar-nav navbar-right">
+            <% if (!user) { %>
+            <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+            </li>
+            
+            <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Signup / Login</a>
+              <ul class="dropdown-menu">
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+              </ul>
+            </li>
+      
+           <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                  <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                  <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                </div>
+            </li>
+
+            <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= user.name %></a>
+              <ul class="dropdown-menu">
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+            </li>
+
+            <% } %>
+      
+          </ul>
+        </div>
+</nav>
+      
